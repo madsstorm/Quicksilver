@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EPiServer.Reference.Commerce.Shared.Models
 {
-    public class MailBasePage : PageData
+    public abstract class MailBasePage : PageData
     {
         [CultureSpecific]
         [Display(
             Name = "Mail Title",
-            Description = "",
+            Description = "Mail Title",
             GroupName = SystemTabNames.Content,
             Order = 1)]
         public virtual string MailTitle { get; set; }
